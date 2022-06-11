@@ -1,2 +1,3 @@
-# CI-CD_GitHub_Actions
+# CI-CD GitHub Actions
+
 Creating CI-CD pipeline using GitHub Actions
