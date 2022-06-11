@@ -2,10 +2,10 @@ name: CI-CD with GitHub Actions
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 jobs:
   init:
     runs-on: ubuntu-latest
