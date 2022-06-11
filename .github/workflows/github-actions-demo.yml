@@ -16,15 +16,18 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7.1.5
       - name: Install modules
-        run: npm ci
+        run: pnpm ci
       - name: Build project
-        run: npm run build
+        run: pnpm run build
       - name: Build storybook
-        run: npm run build:storybook
+        run: pnpm run build:storybook
       - name: Run unit tests
-        run: npm run test:unit
+        run: pnpm run test:unit
       - name: Run e2e tests
-        run: npm run test:e2e
+        run: pnpm run test:e2e
       - name: Lint code
-        run: npm run lint
+        run: pnpm run lint
